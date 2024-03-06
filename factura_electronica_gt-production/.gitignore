@@ -1,0 +1,13 @@
+*.DS_Store
+*.pyc
+*.egg-info
+*.swp
+tags
+factura_electronica/public/js/facelec.min.js
+factura_electronica/public/js/facelec.min.js.map
+factura_electronica/docs/current
+.vscode/
+.vs/
+node_modules
+.temp
+.cache

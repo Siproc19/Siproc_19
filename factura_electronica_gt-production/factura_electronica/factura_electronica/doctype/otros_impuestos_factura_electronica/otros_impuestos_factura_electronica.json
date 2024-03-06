@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "autoname": "TAXFAC.#############",
+ "creation": "2018-07-11 12:26:30.391774",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "row_id",
+  "account_head",
+  "total"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval:[\"On Previous Row Amount\", \"On Previous Row Total\"].indexOf(doc.charge_type)!==-1",
+   "fieldname": "row_id",
+   "fieldtype": "Data",
+   "label": "Reference Row #",
+   "oldfieldname": "row_id",
+   "oldfieldtype": "Data"
+  },
+  {
+   "columns": 2,
+   "fieldname": "account_head",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Account Head",
+   "oldfieldname": "account_head",
+   "oldfieldtype": "Link",
+   "options": "Account",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-11-27 17:52:47.448430",
+ "modified_by": "Administrator",
+ "module": "Factura Electronica",
+ "name": "Otros Impuestos Factura Electronica",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "ASC"
+}
